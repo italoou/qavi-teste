@@ -1,0 +1,92 @@
+.timer{
+  display: flex; 
+  flex-direction: column; 
+  flex: 1; 
+  align-items: center;
+  margin: 150px 0px;
+  width: 100%;
+  /* background-color: red; */
+  position: absolute;
+}
+
+.circle{
+  display: flex; 
+  border-radius: 180px; 
+  background-color: white; 
+  height: 10rem; 
+  width: 10rem;  
+  justify-content: center; 
+  align-items:  center;
+  border: 0.1rem solid;
+  top: 25px;
+  position: absolute;
+
+}
+
+circle{
+  fill: none; 
+  stroke: blue; 
+  stroke-width: 10;
+  transform: translate(-50px, 14px);
+  stroke-dasharray: 540;
+  stroke-dashoffset: 540;
+}
+circle:nth-child(1){
+  stroke-dashoffset: 0;
+  stroke: rgb(102, 102, 102);
+}
+circle:nth-child(2){
+  /* stroke-dashoffset: calc(540 - 270); */
+  transition: stroke-dashoffset 0.8s;
+  stroke: dodgerblue
+}
+
+svg{
+  width: 200px;
+  height:200px;
+  position: relative;
+  /* background-color: black; */
+}
+
+.clock{
+  margin: 2rem;
+
+}
+.time{
+  font-size: 48px;  
+
+  /* align-content: center; */
+  /* justify-items: center;  */
+  /* justify-content: center; */
+}
+
+.btnArea{
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  margin-bottom: 1rem;
+  width: 4rem;
+  background-color: #61dafb;
+  border-radius: 4rem;
+  height: 3rem;
+  width: 9rem;
+  font-size: 28px;
+}
+
+.btn:hover{
+  height: 3.5rem;
+  width: 9.5rem;
+  background-color: #89ddf4;
+
+}
+
+.btn:active{
+  height: 2.5rem;
+  width: 8.0rem;
+  background-color: #33cdf8;
+
+}
